@@ -62,7 +62,7 @@ server.post('/register', (req, res)=> {
     const {email, name, password} = req.body;
 
     database.users.push({
-        id: database.users.length+1,
+        id: `${database.users.length+1}`,
         name : name,
         email : email,
         password : password,
